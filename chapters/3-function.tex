@@ -1,0 +1,161 @@
+
+\chapter{云边协同下深度学习推理服务的调度方法}
+
+\section{推理服务网络模型}
+
+\subsection{模型定义}
+
+\subsection*{1. 节点定义}
+
+\subsubsection*{1.1 云端节点}
+设云端节点集合为 \( C = \{c_1, c_2, \dots, c_m\} \)。每个云端节点 \( c_i \) 定义如下：
+\begin{itemize}
+    \item \(\text{CPU}(c_i)\)：云端节点 \( c_i \) 的 CPU 容量。
+    \item \(\text{MEM}(c_i)\)：云端节点 \( c_i \) 的内存容量。
+    \item \(\text{GPU}(c_i)\)：云端节点 \( c_i \) 的 GPU 容量。
+    \item \(\text{BW}(c_i)\)：云端节点 \( c_i \) 的带宽容量（单位：数据大小/时间）。
+\end{itemize}
+
+\subsubsection*{1.2 边端节点}
+设边端节点集合为 \( E = \{e_1, e_2, \dots, e_n\} \)。每个边端节点 \( e_j \) 定义如下：
+\begin{itemize}
+    \item \(\text{CPU}(e_j)\)：边端节点 \( e_j \) 的 CPU 容量。
+    \item \(\text{MEM}(e_j)\)：边端节点 \( e_j \) 的内存容量。
+    \item \(\text{BW}(e_j)\)：边端节点 \( e_j \) 的带宽容量。
+    \item \(\text{GPU}(e_j) = 0\)：边端节点没有 GPU 资源。
+\end{itemize}
+
+\subsection*{2. 用户请求定义}
+设用户请求集合为 \( R = \{r_1, r_2, \dots, r_k\} \)。每个用户请求 \( r_i \) 定义如下：
+\begin{itemize}
+    \item \(\text{ID}(r_i)\)：请求的唯一标识符。
+    \item \(\text{Type}(r_i)\)：请求的类型，表示需要处理的 AI 任务类型。
+    \item \(\text{Duration}(r_i)\)：请求的运行周期时长（单位：时间）。
+    \item \(\text{DataCount}(r_i)\)：请求包含的数据数量。
+    \item \(\text{DataSize}(r_i)\)：请求的数据总大小（单位：数据大小）。
+    \item \(\text{Accuracy}(r_i)\)：请求要求的最低准确率。
+    \item \(\text{Source}(r_i)\)：请求的节点来源（可以是某个边端节点 \( e_j \)）。
+\end{itemize}
+
+\subsection*{3. AI 负载定义}
+设 AI 负载集合为 \( A = \{a_1, a_2, \dots, a_p\} \)。每个 AI 负载 \( a_i \) 定义如下：
+\begin{itemize}
+    \item \(\text{ID}(a_i)\)：AI 负载的唯一标识符。
+    \item \(\text{Name}(a_i)\)：AI 负载的名称。
+    \item \(\text{SupportedTypes}(a_i)\)：能够响应的请求类型集合。
+    \item \(\text{Latency\_GPU}(a_i, y)\)：在 GPU 环境下，节点 \( y \) 上运行该负载的单次推理时延（单位：时间）。
+    \item \(\text{Latency\_NoGPU}(a_i, y)\)：在非 GPU 环境下，节点 \( y \) 上运行该负载的单次推理时延（单位：时间）。
+    \item \(\text{Throughput}(a_i)\)：单次推理的吞吐量（每次推理能处理的图片数量）。
+    \item \(\text{Resources}(a_i) = (\text{CPU}(a_i), \text{MEM}(a_i), \text{GPU}(a_i))\)：运行所需的资源量。
+\end{itemize}
+
+\subsection*{4. 调度目标与约束}
+
+\subsubsection*{4.1 调度决策变量}
+定义调度变量：
+\begin{itemize}
+    \item \( x_{ij} \geq 0 \)：表示请求 \( r_i \) 中由 AI 负载 \( a_j \) 处理的数据比例（\(0 \leq x_{ij} \leq 1\)，所有负载的比例之和为 1）。
+    \item \( y_{ij} \in C \cup E \)：表示请求 \( r_i \) 中分配给 AI 负载 \( a_j \) 的任务被分配到的节点（云端节点或边端节点）。
+\end{itemize}
+
+约束：
+\begin{itemize}
+    \item 数据分配总量约束：请求 \( r_i \) 中，分配给所有 AI 负载的数据比例之和等于 1，即：
+    \[
+    \sum_{j} x_{ij} = 1, \quad \forall r_i \in R
+    \]
+    其中，\( x_{ij} \) 表示负载 \( a_j \) 处理的比例。
+\end{itemize}
+
+\subsubsection*{4.2 约束条件}
+
+\paragraph*{1. 运行时长约束}
+
+
+\paragraph*{1. 运行时长约束}
+
+请求 \( r_i \) 在运行周期内必须完成其所有数据的处理，约束如下：
+
+\[
+\sum_{j} \left( \frac{x_{ij} \cdot \text{DataCount}(r_i)}{\text{Throughput}(a_j)} \cdot \text{Latency}(a_j, y_{ij}) \right) + \frac{\text{DataSize}(r_i)}{\text{BW}(y_{ij})} \leq \text{Duration}(r_i), \quad \forall r_i \in R
+\]
+
+其中：
+\begin{itemize}
+    \item \( x_{ij} \cdot \text{DataCount}(r_i) \)：表示负载 \( a_j \) 处理的具体数据量。
+    \item \( \text{Throughput}(a_j) \)：AI 负载 \( a_j \) 的单次推理吞吐量。
+    \item \( \text{Latency}(a_j, y_{ij}) \)：AI 负载 \( a_j \) 在节点 \( y_{ij} \) 上的单次推理时延。
+    \item \( \frac{\text{DataSize}(r_i)}{\text{BW}(y_{ij})} \)：数据传输时延，取决于请求的数据大小和节点 \( y_{ij} \) 的带宽。
+    \item \( \text{Duration}(r_i) \)：请求的运行周期时长。
+    \item \[
+            \text{Latency}(a_j, y_i) =
+            \begin{cases} 
+            \text{Latency\_GPU}(a_j), & \text{if } \text{GPU}(y_i) > 0 \\
+            \text{Latency\_NoGPU}(a_j), & \text{if } \text{GPU}(y_i) = 0
+            \end{cases}
+        \]
+\end{itemize}
+
+该约束确保所有分配给负载的任务在请求时长内能够完成。
+
+\paragraph*{2. 准确率约束}
+
+请求的处理结果需满足其准确率要求，考虑数据分配比例后，约束如下：
+\[
+\sum_{j} x_{ij} \cdot \text{Accuracy}(a_j) \geq \text{Accuracy}(r_i), \quad \forall r_i \in R
+\]
+其中：
+\begin{itemize}
+    \item \( x_{ij} \cdot \text{Accuracy}(a_j) \)：表示负载 \( a_j \) 处理的比例对应的贡献准确率。
+    \item \(\text{Accuracy}(r_i)\)：请求 \( r_i \) 对整体任务的最低准确率要求。
+\end{itemize}
+
+\paragraph*{3. 资源容量约束}
+每个节点的资源总使用量不能超过其可用容量：
+\[
+\sum_{r_i \in R} x_{ij} \times \text{Resources}(a_j) \leq \text{AvailableResources}(y_i), \quad \forall y_i \in C \cup E
+\]
+
+\subsubsection*{4.3 优化目标}
+
+优化目标分为两级优先级：
+
+\paragraph*{1. 一级优化目标：最大化成功响应的请求数量}
+
+目标是优先最大化成功响应的请求数量。定义一个二进制变量：
+\[
+z_i = 
+\begin{cases} 
+1, & \text{如果请求 } r_i \text{ 被成功响应（满足所有约束）} \\
+0, & \text{否则}
+\end{cases}
+\]
+一级优化目标为：
+\[
+\max \sum_{r_i \in R} z_i
+\]
+
+\paragraph*{2. 二级优化目标：在满足一级目标的基础上最小化带宽利用}
+
+在一级目标下，进一步最小化所有请求的数据传输所消耗的带宽：
+\[
+\min \sum_{r_i \in R} \sum_{j} \frac{x_{ij} \cdot \text{DataSize}(r_i)}{\text{BW}(y_{ij})}
+\]
+其中：
+\begin{itemize}
+    \item \( x_{ij} \cdot \text{DataSize}(r_i) \)：表示负载 \( a_j \) 处理的任务对应的数据大小。
+    \item \( \text{BW}(y_{ij}) \)：节点 \( y_{ij} \) 的带宽。
+\end{itemize}
+
+
+
+
+
+\subsection{推理服务调度问题的形式化表述}
+
+\section{云边协同下的推理服务调度方法}
+
+
+
+
+主动探测与被动采集结合的方法
