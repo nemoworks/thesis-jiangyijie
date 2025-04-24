@@ -1,0 +1,188 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15" version="26.1.0">
+  <diagram name="第 1 页" id="M5p4yd-zpstdaGaFCOas">
+    <mxGraphModel dx="988" dy="1722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UFVkooL76rDVwSL8vcpJ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontStyle=0" parent="1" source="UFVkooL76rDVwSL8vcpJ-1" target="UFVkooL76rDVwSL8vcpJ-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="-130" />
+              <mxPoint x="345" y="-130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UFVkooL76rDVwSL8vcpJ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontStyle=0" parent="1" source="UFVkooL76rDVwSL8vcpJ-1" target="UFVkooL76rDVwSL8vcpJ-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="-130" />
+              <mxPoint x="645" y="-130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UFVkooL76rDVwSL8vcpJ-1" value="&lt;div style=&quot;color: rgb(31, 35, 41);&quot;&gt;&lt;p style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;云边协同 AI 推理平台&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="390" y="-200" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=1;fontStyle=0" parent="1" source="UFVkooL76rDVwSL8vcpJ-2" target="uRGF7OXdFoOqBudTOUNQ-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;fontStyle=0" parent="1" source="UFVkooL76rDVwSL8vcpJ-2" target="uRGF7OXdFoOqBudTOUNQ-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UFVkooL76rDVwSL8vcpJ-2" value="&lt;div style=&quot;color: rgb(31, 35, 41);&quot;&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;边端模块&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="575" y="-100" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=1;fontStyle=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="UFVkooL76rDVwSL8vcpJ-3" target="uRGF7OXdFoOqBudTOUNQ-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="345" y="-30" />
+              <mxPoint x="170" y="-30" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontStyle=0" parent="1" source="UFVkooL76rDVwSL8vcpJ-3" target="uRGF7OXdFoOqBudTOUNQ-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="345" y="-30" />
+              <mxPoint x="520" y="-30" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UFVkooL76rDVwSL8vcpJ-3" value="&lt;div style=&quot;color: rgb(31, 35, 41);&quot;&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;云端模块&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="275" y="-100" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;fontStyle=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="uRGF7OXdFoOqBudTOUNQ-1" target="uRGF7OXdFoOqBudTOUNQ-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="120" />
+              <mxPoint x="145" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;fontStyle=0" parent="1" source="uRGF7OXdFoOqBudTOUNQ-1" target="uRGF7OXdFoOqBudTOUNQ-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-1" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px; line-height: 50%;&quot;&gt;资&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px; line-height: 50%;&quot;&gt;源&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px; line-height: 50%;&quot;&gt;管&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px; line-height: 50%;&quot;&gt;理&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="150" y="-10" width="40" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;fontStyle=0" parent="1" source="uRGF7OXdFoOqBudTOUNQ-3" target="uRGF7OXdFoOqBudTOUNQ-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="120" />
+              <mxPoint x="295" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;fontStyle=0" parent="1" source="uRGF7OXdFoOqBudTOUNQ-3" target="uRGF7OXdFoOqBudTOUNQ-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-3" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;任&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;务&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;调&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;度&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="300" y="-10" width="40" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;fontStyle=0" parent="1" source="uRGF7OXdFoOqBudTOUNQ-4" target="uRGF7OXdFoOqBudTOUNQ-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-4" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;AI&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;模&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;型&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;管&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;理&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="400" y="-10" width="40" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;fontStyle=0" parent="1" source="uRGF7OXdFoOqBudTOUNQ-5" target="uRGF7OXdFoOqBudTOUNQ-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;fontStyle=0" parent="1" source="uRGF7OXdFoOqBudTOUNQ-5" target="uRGF7OXdFoOqBudTOUNQ-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-5" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;系&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;统&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;监&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;控&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="500" y="-10" width="40" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=0" parent="1" source="UFVkooL76rDVwSL8vcpJ-3" target="uRGF7OXdFoOqBudTOUNQ-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="-40" as="sourcePoint" />
+            <mxPoint x="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="-30" />
+              <mxPoint x="580" y="-30" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontStyle=0" parent="1" source="UFVkooL76rDVwSL8vcpJ-3" target="uRGF7OXdFoOqBudTOUNQ-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="-50" as="sourcePoint" />
+            <mxPoint x="310" y="-10" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontStyle=0" parent="1" source="UFVkooL76rDVwSL8vcpJ-3" target="uRGF7OXdFoOqBudTOUNQ-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="-40" as="sourcePoint" />
+            <mxPoint x="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="345" y="-30" />
+              <mxPoint x="420" y="-30" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-10" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;节&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;点&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;管&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;理&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="125" y="140" width="40" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-11" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;设&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;备&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;管&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;理&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="175" y="140" width="40" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-12" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(31, 35, 41), rgb(205, 208, 213)); font-size: 18px;&quot;&gt;设&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(31, 35, 41), rgb(205, 208, 213)); font-size: 18px;&quot;&gt;备&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(31, 35, 41), rgb(205, 208, 213)); font-size: 18px;&quot;&gt;请&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;求&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;调&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;度&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="275" y="140" width="40" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-14" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(31, 35, 41), rgb(205, 208, 213)); font-size: 18px;&quot;&gt;k8s&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(31, 35, 41), rgb(205, 208, 213)); font-size: 18px;&quot;&gt;负&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(31, 35, 41), rgb(205, 208, 213)); font-size: 18px;&quot;&gt;载&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(31, 35, 41), rgb(205, 208, 213)); font-size: 18px;&quot;&gt;调&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;度&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="325" y="140" width="40" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-15" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;AI&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;模&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;型&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;开&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;发&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="375" y="140" width="40" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-16" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;AI&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;模&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;型&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;部&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;署&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="425" y="140" width="40" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-17" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;模&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;型&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;推&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;理&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;监&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;控&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="475" y="140" width="40" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-18" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;通&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;信&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;网&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;络&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;监&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;控&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="525" y="140" width="40" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-20" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;数&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;据&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;转&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;发&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="590" y="-10" width="40" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;fontStyle=0" parent="1" source="uRGF7OXdFoOqBudTOUNQ-21" target="uRGF7OXdFoOqBudTOUNQ-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=1;fontStyle=0" parent="1" source="uRGF7OXdFoOqBudTOUNQ-21" target="uRGF7OXdFoOqBudTOUNQ-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-21" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;监&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;控&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;探&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;针&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="660" y="-10" width="40" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-22" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;通&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;信&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;网&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;络&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;探&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;针&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="635" y="140" width="40" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-23" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;模&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;型&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;推&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;理&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;探&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;针&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="685" y="140" width="40" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=1;fontStyle=0" parent="1" source="uRGF7OXdFoOqBudTOUNQ-4" target="uRGF7OXdFoOqBudTOUNQ-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="110" as="sourcePoint" />
+            <mxPoint x="395" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="120" />
+              <mxPoint x="445" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B_heklZ_4AHh2rSxopDt-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uRGF7OXdFoOqBudTOUNQ-6" target="B_heklZ_4AHh2rSxopDt-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uRGF7OXdFoOqBudTOUNQ-6" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;业&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;务&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;管&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;理&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="225" y="-10" width="40" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="B_heklZ_4AHh2rSxopDt-1" value="&lt;div style=&quot;color: rgb(31, 35, 41); line-height: 50%;&quot;&gt;&lt;p&gt;&lt;font size=&quot;4&quot;&gt;数&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;4&quot;&gt;据&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;4&quot;&gt;业&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;4&quot;&gt;务&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;4&quot;&gt;开&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font size=&quot;4&quot;&gt;发&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="225" y="140" width="40" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

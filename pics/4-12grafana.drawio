@@ -1,0 +1,44 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15" version="26.2.12">
+  <diagram name="第 1 页" id="oR4tM1SVHTSBvVTLK1WI">
+    <mxGraphModel dx="451" dy="299" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9zaQ96fbetAst5aaWevS-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=70;exitDy=51.5;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="9zaQ96fbetAst5aaWevS-1" target="9zaQ96fbetAst5aaWevS-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9zaQ96fbetAst5aaWevS-8" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;json 模版&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9zaQ96fbetAst5aaWevS-4">
+          <mxGeometry x="-0.0307" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zaQ96fbetAst5aaWevS-1" value="&lt;font&gt;&lt;font&gt;Grafana&lt;/font&gt;&lt;/font&gt;&lt;div&gt;仪表盘&lt;br&gt;&lt;div&gt;&amp;lt;template&amp;gt;&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=23;" vertex="1" parent="1">
+          <mxGeometry x="265" y="260" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9zaQ96fbetAst5aaWevS-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="9zaQ96fbetAst5aaWevS-2" target="9zaQ96fbetAst5aaWevS-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9zaQ96fbetAst5aaWevS-9" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;配置元信息&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9zaQ96fbetAst5aaWevS-5">
+          <mxGeometry x="-0.0263" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9zaQ96fbetAst5aaWevS-2" value="&lt;div style=&quot;line-height: 160%;&quot;&gt;Prometheus&lt;div style=&quot;line-height: 160%;&quot;&gt;数据源配置&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=22;" vertex="1" parent="1">
+          <mxGeometry x="265" y="370" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9zaQ96fbetAst5aaWevS-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9zaQ96fbetAst5aaWevS-3" target="9zaQ96fbetAst5aaWevS-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9zaQ96fbetAst5aaWevS-3" value="渲染引擎" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="340" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9zaQ96fbetAst5aaWevS-6" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Grafana_logo.svg/1200px-Grafana_logo.svg.png;" vertex="1" parent="1">
+          <mxGeometry x="540" y="327.29" width="64" height="65.42" as="geometry" />
+        </mxCell>
+        <mxCell id="9zaQ96fbetAst5aaWevS-10" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;上传配置&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="476" y="335.29" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

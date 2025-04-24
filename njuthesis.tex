@@ -46,7 +46,7 @@
     %
     %   字体设置，不填写则自动调用系统预装字体，详见手册
     % fontset = win|mac|macoffice|fandol|none,
-    type=master,
+    type = master,
     degree = professional,
   ]{njuthesis}
 
@@ -61,11 +61,68 @@
 % \usepackage{physics} % 物理百宝箱
 % \usepackage[version=4]{mhchem} % 绘制分子式
 \usepackage{listings} % 展示代码
+\usepackage{mathtools}
+% \usepackage{unicode-math}
 \usepackage{algorithm,algorithmic} % 展示算法伪代码
+% \usepackage{xcolor}
+% \definecolor{mycolor}{HTML}{FFF2CC}
+\renewcommand{\dblfloatpagefraction}{.98} % 设置图片所占页面最大比例
+\usepackage{minted}
+\usemintedstyle{vs}  % 可选样式（如vs, tango等）
+\usepackage{amsmath}
+\newtheorem{theorem}{定理}[chapter]
+\newtheorem{definition}{定义}[chapter]
 
 % 在导言区随意定制所需命令
 % \DeclareMathOperator{\spn}{span}
 % \NewDocumentCommand\mathbi{m}{\textbf{\em #1}}
+
+% -------------------------允许算法跨页-------------
+\makeatletter
+\newenvironment{breakablealgorithm}
+  {% \begin{breakablealgorithm}
+   \begin{center}
+     \refstepcounter{algorithm}% New algorithm
+     \hrule height.8pt depth0pt \kern2pt % \@fs@pre for \@fs@ruled
+     \setlength{\baselineskip}{1em}% 默认行距 (可替换为实际值)
+     \renewcommand{\caption}[2][\relax]{% Make a new \caption
+       {\raggedright\textbf{\ALG@name~\thealgorithm} ##2\par}%
+       \ifx\relax##1\relax % #1 is \relax
+         \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##2}%
+       \else % #1 is not \relax
+         \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##1}%
+       \fi
+       \kern2pt\hrule\kern2pt
+     }
+  }{% \end{breakablealgorithm}
+     \kern2pt\hrule\relax % \@fs@post for \@fs@ruled
+   \end{center}
+  }
+\makeatother
+
+\renewcommand{\algorithmiccomment}[1]{ \hfill $\smalltriangleright$ #1}
+
+% 需要安装Pygments并编译时添加 -shell-escape 参数
+\usepackage{minted}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+% 定义 YAML 语言
+\lstdefinelanguage{YAML}{
+  keywords={apiVersion, kind, metadata, name, namespace, spec, protocol, properties, description, type, accessMode, maximum, minimum}, % YAML 常用关键字
+  keywordstyle=\color{blue}\bfseries, % 关键字样式
+  identifierstyle=\color{black}, % 标识符样式
+  sensitive=false, % 不区分大小写
+  comment=[l]{\#}, % 注释以 # 开头
+  commentstyle=\color{gray}\itshape, % 注释样式
+  stringstyle=\color{purple}, % 字符串样式
+  morestring=[b]", % 字符串用双引号
+  morestring=[b]' % 字符串用单引号
+}
+
+% \usepackage{graphicx}
+% \usepackage{adjustbox}
 
 % 开始编写论文
 \begin{document}
@@ -82,20 +139,14 @@
 % 以下命令用于抑制这些信息
 \raggedbottom
 
-\begin{abstract}
-  中文摘要
-\end{abstract}
-
-\begin{abstract*}
-  English abstract
-\end{abstract*}
+\include{chapters/0-abstract.tex}
 
 % 生成目录
 \tableofcontents
 % 生成图片清单
-% \listoffigures
+\listoffigures
 % 生成表格清单
-% \listoftables
+\listoftables
 
 %---------------------------------------------------------------------
 %	正文部分
@@ -142,9 +193,7 @@
 %	致谢
 %---------------------------------------------------------------------
 
-\begin{acknowledgement}
-  感谢 \href{https://git.nju.edu.cn/nju-lug/lug-introduction}{LUG@NJU}。
-\end{acknowledgement}
+\include{chapters/7-acknowledgement}
 
 %---------------------------------------------------------------------
 %	学术简历
@@ -159,11 +208,11 @@
 %---------------------------------------------------------------------
 
 % 附录部分使用单独的字母序号
-\appendix
+% \appendix
 
 % 可以在这里插入补充材料
-\chapter{正文中涉及的数据及源代码}
-\dots
+% \chapter{正文中涉及的数据及源代码}
+% \dots
 
 % 完工
 \end{document}

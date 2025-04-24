@@ -1,0 +1,30 @@
+
+\begin{abstract}
+
+随着人工智能技术向边缘场景的扩展，云边协同模型推理技术成为实时决策的关键。当前工作在动态资源调度和异构设备适配方面存在局限性，一方面传统的负载均衡算法难以高效分配任务，另一方面云边平台的节点资源监控无法充分支持模型推理调度，且推理模型在异构节点中的部署效率较低。为解决上述问题，本文提出了一种新型调度框架。该框架引入模型推理的分层委托策略并设计协同调度优化算法，显著降低端到端延迟，实现了高效的云边协同模型推理。具体工作包括：
+
+\begin{itemize} 
+\item 提出了一种面向流式数据任务的云边协同模型推理调度模型。该模型将云边环境抽象为树状拓扑结构，并通过定义计算节点、终端设备和推理模型实例等核心组件以及流式数据分流机制，构建了一个统一的系统概念框架。基于该框架，设计了分层调度委托策略和相应的调度算法，以优化云边协同推理过程。
+\item 设计并实现了一种基于KubeEdge的原型系统KEAS。该系统基于Akka集群集成了模型批处理测试、实时监控探针、数据路由及调度决策等关键组件，有效支撑设备数据流请求的高效调度，实现了云边协同环境下的模型推理优化。
+\item 开展了全面的实验评估，验证了KEAS系统在边缘设备调度成功率和设备请求调度成功率方面的优越性，超越现有负载均衡算法。KEAS展现出良好的异构计算节点适配能力，并支持不同深度学习框架间的模型转换，显著提升了系统的灵活性与兼容性。
+\end{itemize}
+
+\end{abstract}
+
+
+
+\begin{abstract*}
+
+With the expansion of artificial intelligence (AI) into edge environments, cloud-edge collaborative model inference has emerged as a crucial component for real-time decision-making. Current work has limitations in dynamic resource scheduling and heterogeneous device adaptation. Traditional load balancing algorithms struggle to efficiently distribute tasks, and node resource monitoring in cloud-edge platforms inadequately supports model inference scheduling. Additionally, the deployment of inference models on heterogeneous nodes is inefficient. To address these limitations, a novel scheduling framework is proposed. By introducing a hierarchical delegation strategy for model inference and designing a collaborative scheduling optimization algorithm, KEAS significantly reduces end-to-end latency, achieving efficient cloud-edge collaborative model inference. The contributions of this work are outlined as follows:
+
+\begin{itemize}
+    \item A cloud-edge collaborative model inference scheduling framework for streaming data tasks is proposed. This framework 
+    abstracts the cloud edge environment into a tree topology and delineates essential components, including computational nodes, edge devices, and model instances, along with a streaming data  mechanism, to form a cohesive system. Based on this framework, a hierarchical scheduling delegation strategy and corresponding scheduling algorithms are designed to optimise the cloud-edge collaborative inference process.
+    \item A prototype system, the Kubernetes-Enhanced Adaptive Scheduling system (KEAS), was designed and implemented based on KubeEdge. The system integrates key components such as model batch testing, real-time monitoring probes, data routing, and scheduling decisions based on Akka clusters. This system effectively supports the efficient scheduling of device data flow requests and realizes the optimization of model inference in a cloud-edge collaboration environment.
+    \item A comprehensive experimental evaluation was conducted to verify the superiority of KEAS system in terms of edge device scheduling success rate and device request scheduling success rate, surpassing the existing load balancing algorithms. KEAS demonstrates good heterogeneous computing node adaptation capability and supports model conversion between different deep learning frameworks, significantly improving the flexibility and compatibility of the system.
+\end{itemize}
+
+\end{abstract*}
+
+
+

@@ -1,0 +1,54 @@
+@startuml
+' 设置布局方向为从上到下
+top to bottom direction
+
+
+DeviceModel -[hidden]down- DeviceModelList
+V1ObjectMeta -[hidden]right- DeviceModel
+
+' 定义外部接口和类
+interface KubernetesObject
+interface KubernetesListObject
+class V1ObjectMeta
+class V1ListMeta
+
+' 定义设备模型相关类及其字段
+class DeviceModel {
+  - apiVersion : String
+  - kind : String
+  - metadata : V1ObjectMeta
+  - spec : DeviceModelSpec
+}
+
+class DeviceModelList {
+  - apiVersion : String
+  - kind : String
+  - metadata : V1ListMeta
+  - items : List<DeviceModel>
+}
+
+class DeviceModelProperty {
+  - accessMode : String
+  - description : String
+  - name : String
+  - type : String
+  - maximum : String
+  - minimum : String
+}
+
+class DeviceModelSpec {
+  - properties : List<DeviceModelProperty>
+  - protocol : String
+}
+
+' 显示实现关系
+DeviceModel --|> KubernetesObject
+DeviceModelList --|> KubernetesListObject
+
+' 显示组合关系
+DeviceModel "1" *-- "1" V1ObjectMeta : contains
+DeviceModel "1" *-- "1" DeviceModelSpec : contains
+DeviceModelSpec "1" *-- "0..*" DeviceModelProperty : contains
+DeviceModelList "1" *-- "1" V1ListMeta : contains
+DeviceModelList "1" *-- "0..*" DeviceModel : contains
+@enduml

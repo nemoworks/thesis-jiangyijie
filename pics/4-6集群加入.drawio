@@ -1,0 +1,83 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15" version="26.2.10">
+  <diagram name="第 1 页" id="xFi2DgSBSKZWvdBvTH6e">
+    <mxGraphModel dx="451" dy="299" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="U9wvQ1SIOHGwhJzIrvSg-6" value="&lt;b&gt;Manager&lt;br&gt;(主节点)&lt;/b&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};size=40;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="190" y="51" width="70" height="269" as="geometry" />
+        </mxCell>
+        <mxCell id="U9wvQ1SIOHGwhJzIrvSg-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="U9wvQ1SIOHGwhJzIrvSg-6" vertex="1">
+          <mxGeometry x="30" y="116" width="10" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="SIk2JnVburX0GYB6veat-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="U9wvQ1SIOHGwhJzIrvSg-6">
+          <mxGeometry x="35" y="149" width="10" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="SIk2JnVburX0GYB6veat-2" value="设置加入节点信息" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="SIk2JnVburX0GYB6veat-1" parent="U9wvQ1SIOHGwhJzIrvSg-6">
+          <mxGeometry x="-0.0028" relative="1" as="geometry">
+            <mxPoint x="40" y="129" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="70" y="159" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SIk2JnVburX0GYB6veat-5" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="U9wvQ1SIOHGwhJzIrvSg-6">
+          <mxGeometry x="30" y="235" width="10" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="U9wvQ1SIOHGwhJzIrvSg-44" value="&lt;b&gt;Manager&lt;/b&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};size=40;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="45" y="51" width="70" height="269" as="geometry" />
+        </mxCell>
+        <mxCell id="U9wvQ1SIOHGwhJzIrvSg-45" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="U9wvQ1SIOHGwhJzIrvSg-44" vertex="1">
+          <mxGeometry x="30" y="116" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TjUFjEASQclWXU2zAIp1-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="U9wvQ1SIOHGwhJzIrvSg-44" vertex="1">
+          <mxGeometry x="30" y="188" width="10" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="SIk2JnVburX0GYB6veat-3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="U9wvQ1SIOHGwhJzIrvSg-44">
+          <mxGeometry x="30" y="235" width="10" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="SIk2JnVburX0GYB6veat-14" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="U9wvQ1SIOHGwhJzIrvSg-44">
+          <mxGeometry x="30" y="67" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="U9wvQ1SIOHGwhJzIrvSg-48" value="定时上传运行状态" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1" target="SIk2JnVburX0GYB6veat-5">
+          <mxGeometry x="-0.0062" width="80" relative="1" as="geometry">
+            <mxPoint x="84.97999999999988" y="286.00000000000006" as="sourcePoint" />
+            <mxPoint x="199.98" y="286.00000000000006" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjUFjEASQclWXU2zAIp1-2" value="集群加入成功消息" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="-0.0025" width="80" relative="1" as="geometry">
+            <mxPoint x="220" y="240" as="sourcePoint" />
+            <mxPoint x="85" y="240" as="targetPoint" />
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="125" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SIk2JnVburX0GYB6veat-8" value="发起加入集群请求" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-0.0053" width="80" relative="1" as="geometry">
+            <mxPoint x="84.99999999999987" y="167.00000000000006" as="sourcePoint" />
+            <mxPoint x="220" y="167" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SIk2JnVburX0GYB6veat-9" value="&lt;b&gt;Master&lt;/b&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};size=40;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="334" y="51" width="70" height="219" as="geometry" />
+        </mxCell>
+        <mxCell id="SIk2JnVburX0GYB6veat-10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="SIk2JnVburX0GYB6veat-9">
+          <mxGeometry x="30" y="67" width="10" height="23" as="geometry" />
+        </mxCell>
+        <mxCell id="SIk2JnVburX0GYB6veat-15" value="发起加入云边平台请求" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-0.0067" width="80" relative="1" as="geometry">
+            <mxPoint x="85" y="118" as="sourcePoint" />
+            <mxPoint x="364" y="118" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

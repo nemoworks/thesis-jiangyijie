@@ -1,0 +1,128 @@
+@startuml
+' 使用 smetana 引擎优化布局
+!pragma layout smetana
+
+' 定义外部接口和类
+interface KubernetesListObject <<external>>
+interface KubernetesObject <<external>>
+class V1ListMeta <<external>>
+class V1ObjectMeta <<external>>
+
+DeviceList -[hidden]right- Device
+KubernetesObject -[hidden]left- Device
+DeviceProtocol  -[hidden]right- DeviceProperty
+DeviceList -[hidden]down- V1ListMeta
+DeviceList -[hidden]down- KubernetesListObject
+DeviceStatus -[hidden]right- Device
+DeviceModelRef -[hidden]right- DeviceSpec
+DevicePropertyPushMethod -[hidden]down- DeviceProtocol
+Device -[hidden]up- DeviceSpec
+MqttPushMethod -[hidden]down- DevicePropertyPushMethod
+DeviceProtocol -[hidden]left- DeviceProtocolConfigData
+DeviceProtocolConfigData -[hidden]right- DeviceProperty
+DevicePropertyDesired -[hidden]down- DeviceProperty
+DevicePropertyVisitor -[hidden]right- DevicePropertyPushMethod
+
+' 分布摆放主要类
+KubernetesListObject ^-- DeviceList
+KubernetesObject ^-- Device
+
+DeviceList *-- V1ListMeta
+DeviceList *-- Device
+Device *-- V1ObjectMeta
+Device *-- DeviceSpec
+Device *-- DeviceStatus
+DeviceSpec *-- DeviceModelRef
+DeviceSpec *-- DeviceProperty
+DeviceSpec *-- DeviceProtocol
+DeviceProperty *-- DevicePropertyDesired
+DeviceProperty *-- DevicePropertyVisitor
+DeviceProperty *-- DevicePropertyPushMethod
+DevicePropertyDesired *-- DevicePropertyDesiredMetadata
+DevicePropertyPushMethod *-- MqttPushMethod
+DevicePropertyVisitor *-- DevicePropertyVisitorConfigData
+DeviceProtocol *-- DeviceProtocolConfigData
+
+' 类定义区
+class DeviceList {
+  - String apiVersion
+  - String kind
+  - V1ListMeta metadata
+  - List<Device> items
+}
+
+class Device {
+  - String apiVersion
+  - String kind
+  - V1ObjectMeta metadata
+  - DeviceSpec spec
+  - DeviceStatus status
+}
+
+class DeviceStatus {
+  ' 根据业务需求增加状态字段，此处为空
+}
+
+class DeviceSpec {
+  - DeviceModelRef deviceModelRef
+  - String nodeName
+  - List<DeviceProperty> properties
+  - DeviceProtocol protocol
+}
+
+class DeviceModelRef {
+  - String name
+}
+
+class DeviceProperty {
+  - DevicePropertyDesired desired
+  - String name
+  - Boolean reportToCloud
+  - DevicePropertyVisitor visitors
+  - DevicePropertyPushMethod pushMethod
+  - Long reportCycle
+}
+
+class DevicePropertyDesired {
+  - DevicePropertyDesiredMetadata metadata
+  - String value
+}
+
+class DevicePropertyDesiredMetadata {
+  - String timestamp
+}
+
+class DevicePropertyPushMethod {
+  - MqttPushMethod mqtt
+}
+
+class MqttPushMethod {
+  - String address
+  - Boolean retained
+  - String topic
+}
+
+class DevicePropertyVisitor {
+  - DevicePropertyVisitorConfigData configData
+  - String protocolName
+}
+
+class DevicePropertyVisitorConfigData {
+  - String dataType
+  - String featureName
+}
+
+class DeviceProtocol {
+  - DeviceProtocolConfigData configData
+  - String protocolName
+}
+
+class DeviceProtocolConfigData {
+  - Integer deviceID
+  - Integer format
+  - Integer height
+  - Integer protocolID
+  - String serialPort
+  - Integer width
+}
+@enduml

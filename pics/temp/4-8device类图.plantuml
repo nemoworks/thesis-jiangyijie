@@ -1,0 +1,120 @@
+@startuml
+' 设置布局方向为从上到下
+
+' 定义外部接口和类
+interface KubernetesListObject <<external>>
+interface KubernetesObject <<external>>
+class V1ListMeta <<external>>
+class V1ObjectMeta <<external>>
+
+KubernetesListObject -[hidden]right- Device
+DeviceList -[hidden]right- KubernetesObject
+Device -[hidden]right- DeviceList
+DeviceList -[hidden]right- V1ListMeta
+
+
+' 定义设备相关类及其字段
+class DeviceSpec {
+  - DeviceModelRef deviceModelRef
+  - String nodeName
+  - List<DeviceProperty> properties
+  - DeviceProtocol protocol
+}
+
+class DeviceProperty {
+  - DevicePropertyDesired desired
+  - String name
+  - Boolean reportToCloud
+  - DevicePropertyVisitor visitors
+  - DevicePropertyPushMethod pushMethod
+  - Long reportCycle
+}
+
+class DeviceList {
+  - String apiVersion
+  - String kind
+  - V1ListMeta metadata
+  - List<Device> items
+}
+
+class Device {
+  - String apiVersion
+  - String kind
+  - V1ObjectMeta metadata
+  - DeviceSpec spec
+  - DeviceStatus status
+}
+
+class DeviceModelRef {
+  - String name
+}
+
+class DevicePropertyDesired {
+  - DevicePropertyDesiredMetadata metadata
+  - String value
+}
+
+class DevicePropertyDesiredMetadata {
+  - String timestamp
+}
+
+class DevicePropertyPushMethod {
+  - MqttPushMethod mqtt
+}
+
+class DevicePropertyVisitor {
+  - DevicePropertyVisitorConfigData configData
+  - String protocolName
+}
+
+class DevicePropertyVisitorConfigData {
+  - String dataType
+  - String featureName
+}
+
+class DeviceProtocol {
+  - DeviceProtocolConfigData configData
+  - String protocolName
+}
+
+class DeviceProtocolConfigData {
+  - Integer deviceID
+  - Integer format
+  - Integer height
+  - Integer protocolID
+  - String serialPort
+  - Integer width
+}
+
+class DeviceStatus {
+  ' 根据业务需求增加状态字段，此处为空
+}
+
+class MqttPushMethod {
+  - String address
+  - Boolean retained
+  - String topic
+}
+
+' 显示实现关系，使用 ^-- 将接口放在类的上方
+KubernetesListObject ^-- DeviceList
+KubernetesObject ^-- Device
+
+' 显示组合关系
+DeviceSpec "1" *-- "1" DeviceModelRef : contains
+DeviceSpec "1" *-- "0..*" DeviceProperty : contains
+DeviceSpec "1" *-- "1" DeviceProtocol : contains
+DeviceProperty "1" *-- "1" DevicePropertyDesired : contains
+DeviceProperty "1" *-- "1" DevicePropertyVisitor : contains
+DeviceProperty "1" *-- "1" DevicePropertyPushMethod : contains
+DeviceList "1" *-- "1" V1ListMeta : contains
+DeviceList "1" *-- "0..*" Device : contains
+Device "1" *-- "1" V1ObjectMeta : contains
+Device "1" *-- "1" DeviceSpec : contains
+Device "1" *-- "1" DeviceStatus : contains
+DevicePropertyDesired "1" *-- "1" DevicePropertyDesiredMetadata : contains
+DevicePropertyPushMethod "1" *-- "1" MqttPushMethod : contains
+DevicePropertyVisitor "1" *-- "1" DevicePropertyVisitorConfigData : contains
+DeviceProtocol "1" *-- "1" DeviceProtocolConfigData : contains
+@enduml
+

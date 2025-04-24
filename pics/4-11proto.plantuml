@@ -1,0 +1,91 @@
+@startuml
+ProtoDeploymentConfig -[hidden]right- ProtoConfigMapConfig
+ProtoServiceConfig -[hidden]right- VolumeConfig
+ContainerConfig -[hidden]down- VolumeMountConfig
+ContainerPortConfig -[hidden]right- VolumeMountConfig
+EnvVarConfig -[hidden]up- VolumeConfig
+
+class ProtoServiceConfig {
+  - name : String
+  - namespace : String
+  - type : String
+  - ports : List<ServicePortConfig>
+  - selector : Map<String, String>
+}
+
+class ProtoDeploymentConfig {
+  - id : Long
+  - name : String
+  - namespace : String
+  - replicas : int
+  - labels : Map<String, String>
+  - containers : List<ContainerConfig>
+  - hostNetwork : boolean
+  - nodeName : String
+  - volumes : List<VolumeConfig>
+  - serviceConfig : ProtoServiceConfig
+  - configMapConfigs : List<ProtoConfigMapConfig>
+}
+
+class ProtoConfigMapConfig {
+  - name : String
+  - namespace : String
+  - data : Map<String, String>
+}
+
+class ServicePortConfig {
+  - name : String
+  - port : int
+  - targetPort : int
+  - protocol : String
+}
+
+class ContainerConfig {
+  - name : String
+  - image : String
+  - command : List<String>
+  - args : List<String>
+  - ports : List<ContainerPortConfig>
+  - allowChangeCPULimits : boolean
+  - resourceRequests : Map<String, String>
+  - resourceLimits : Map<String, String>
+  - env : List<EnvVarConfig>
+  - volumeMounts : List<VolumeMountConfig>
+}
+
+class ContainerPortConfig {
+  - name : String
+  - containerPort : int
+  - protocol : String
+}
+
+class EnvVarConfig {
+  - name : String
+  - value : String
+}
+
+class VolumeConfig {
+  - name : String
+  - type : String
+  - pathOrName : String
+}
+
+class VolumeMountConfig {
+  - name : String
+  - mountPath : String
+  - subPath : String
+}
+
+' Class relationships
+ProtoDeploymentConfig "1" *-- "1" ProtoServiceConfig : contains
+ProtoDeploymentConfig "1" *-- "*" ProtoConfigMapConfig : contains
+ProtoDeploymentConfig "1" *-- "*" ContainerConfig : contains
+ProtoDeploymentConfig "1" *-- "*" VolumeConfig : contains
+ProtoServiceConfig "1" *-- "*" ServicePortConfig : contains
+ContainerConfig "1" *-- "*" ContainerPortConfig : contains
+ContainerConfig "1" *-- "*" EnvVarConfig : contains
+ContainerConfig "1" *-- "*" VolumeMountConfig : contains
+
+' Layout from top to bottom
+top to bottom direction
+@enduml

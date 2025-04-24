@@ -11,26 +11,26 @@
 % info 类用于录入个人信息
 %   带*号的为对应英文字段
 \njusetup[info]{
-    title = {云边协同下深度学习推理服务平台的设计与实现},
+    title = {面向模型推理的云边协同调度技术研究},
     % 中文题目
     % 直接填写标题就是自动换行
     % 可以使用换行控制符(\\)手动指定换行位置
     %
-    title* = {Design and Implementation of a Deep Learning Inference Service Platform in Cloud-Edge Collaboration},
+    title* = {Research on Cloud-Edge Collaborative Scheduling for Model Inference},
     % 英文题目
     %
     author = {蒋一杰},
     % 作者姓名
     %
-    author* = {Jiang Yijie},
+    author* = {Yijie Jiang},
     % 作者英文姓名
     % 一般使用拼音
     %
-    keywords = {我,就是,充数的,关键词},
+    keywords = {云边协同, 模型推理, 动态资源调度, KubeEdge, Akka},
     % 中文关键词列表
     % 使用英文半角逗号(,)分隔
     %
-    keywords* = {Dummy,Keywords,Here,{It Is}},
+    keywords* = {cloud-edge collaborative, model inference, dynamic resource scheduling, KubeEdge, Akka},
     % 英文关键词
     % 使用英文半角逗号(,)分隔
     %
@@ -53,13 +53,13 @@
     % major = {封面专业,摘要专业},
     % 研究生专业型学位可能遇到两处内容不一致的情况
     %
-    supervisor = {马晓星~教授},
-    supervisor*= {Ma Xiaoxing~Professor},
+    supervisor = {马晓星教授},
+    supervisor*= {Professor~Xiaoxing Ma},
     % 导师全称
     % 使用英文半角逗号(,)分隔中文姓名和职称
     %
-    % supervisor-ii = {第二导师姓名,副教授},
-    % supervisor-ii* = {Associate professor My Second Supervisor},
+    supervisor-ii = {曹春教授},
+    supervisor-ii* = {Professor~Chun Cao},
     % 第二导师全称
     % 如果确实没有第二导师，不填写即可
     %
@@ -100,7 +100,7 @@
     secret-level = {公开},
     % 密级
     %
-    defend-date = {2022-05-21},
+    defend-date = {2025-05-21},
     % 答辩日期
     % 格式为 yyyy-mm-dd
     % 不填就是编译当天日期
