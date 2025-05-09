@@ -135,8 +135,8 @@ spec:
 
 \begin{enumerate}
     \item \textbf{全部本地执行算法（All Local Execution，ALE）}：所有的设备流式数据都在本地执行，不需要卸载。
-    \item \textbf{随机卸载算法（Random Offloading Algorithm）}：该算法通过随机选择卸载目标节点来分配任务。
-    \item \textbf{轮询卸载算法（Round-Robin Algorithm）}：该算法按照固定的顺序依次分配任务到不同的边缘或云端节点。
+    \item \textbf{随机卸载算法（Random Offloading Algorithm，ROA）}：该算法通过随机选择卸载目标节点来分配任务。
+    \item \textbf{轮询卸载算法（Round-Robin Algorithm，RRA）}：该算法按照固定的顺序依次分配任务到不同的边缘或云端节点。
 \end{enumerate}
 
 本文最大的服务质量（QoS）指标是边缘设备调度成功率和设备请求调度成功率，其中边缘设备调度成功率指边缘设备生成的流式数据能够被完整处理的比例，该指标反映了系统对边缘设备任务的整体处理能力；设备请求调度成功率指设备生成的流式数据中成功被处理的比例，该指标更关注单个任务请求的完成情况，尤其是在高负载场景下的表现。
@@ -202,7 +202,7 @@ spec:
   \label{fig:exp4}
 \end{figure}
 
-在云端调度层次，本文比较了三种常见的队列优化策略：最小任务优先（Small Task First Out, STFO）、最大任务优先（Large Task First Out, LTFO）以及先来先服务（First-Come, First-Served, FCFS）。实验在相同的配置条件下进行，仅通过调整数据采集频率来观察三种队列的表现差异。由于本实验中云端资源是有限的，因此会出现任务失败的情况。如图 \ref{fig:exp4} 所示，实验结果表明，在云端全局调度策略中，本文所用的 STFO 方式能够显著提高设备的任务成功率。
+在云端调度层次，本文比较了三种常见的队列优化策略：最小任务优先（Small Task First Out, STFO）、最大任务优先（Large Task First Out, LTFO）以及先进先出（First In First Out，FIFO）。实验在相同的配置条件下进行，仅通过调整数据采集频率来观察三种队列的表现差异。由于本实验中云端资源是有限的，因此会出现任务失败的情况。如图 \ref{fig:exp4} 所示，实验结果表明，在云端全局调度策略中，本文所用的 STFO 方式能够显著提高设备的任务成功率。
 
 \section{系统功能验证实验}
 
